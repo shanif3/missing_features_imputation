@@ -4,8 +4,6 @@ import numpy as np
 from torch import Tensor
 from torch_geometric.datasets import Planetoid
 from torch_scatter import scatter_add
-from torch_geometric.data import Data
-import scipy
 
 def find_mask(dataset: pd.DataFrame) -> torch.Tensor:
     """
